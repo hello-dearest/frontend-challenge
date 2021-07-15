@@ -24,7 +24,16 @@ const theme = extendTheme({
     }
   },
   fonts,
-  breakpoints
+  breakpoints,
+  components: {
+    Button: {
+      baseStyle: {
+        _focus: {
+          boxShadow: 'none'
+        }
+      }
+    }
+  }
 });
 
 export default theme;
